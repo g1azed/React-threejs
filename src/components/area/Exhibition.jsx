@@ -22,4 +22,3 @@ export default function Capybara() {
     // return the primitive with our scene and changed materials
     return <primitive object={scene} />;
 }
- 
