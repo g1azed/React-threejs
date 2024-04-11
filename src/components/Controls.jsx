@@ -4,6 +4,7 @@ import { useSphere } from '@react-three/cannon';
 import { Vector3 } from 'three';
 import { useKeyboard } from "../hooks/useKeyboard"; // + 만들어 둔 hook을 추가하자
 
+
 const JUMP_FORCE = 4; // + Player JUMP 발생시 적용할 힘의 값
 const SPEED = 4; // + 이동 SPEED를 위해 추가
 
@@ -23,7 +24,7 @@ export default function Controls() {
         mass: 1, // 질량
         type: "Dynamic", // 사용자 input에 따라 조작 가능한 요소를 지정
         // Dynamic : 0이 아닌 질량을 가진채로 다른 요소들과 충돌 O, 유저에 의해 움직여짐
-        position: [0, 60, 0],
+        position: [0, 2, 0],
         // position 높이에 해당되는 두번째 인자를 1로 변경
     }))
 
